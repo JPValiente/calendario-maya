@@ -18,3 +18,5 @@ Se utilizará Java como lenguaje y el patrón de diseño Modelo-Vista-Controlado
 Teoria de Sistemas Segundo Semestre 2019,<br>
 Universidad de San Carlos de Guatemala, <br>
 Centro Universitario de Occidente.
+
+### Primer Examen Parcial
