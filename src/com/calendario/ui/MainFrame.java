@@ -30,15 +30,23 @@ public class MainFrame extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         calendrioCholqijRadioButton = new javax.swing.JRadioButton();
         jLabel2 = new javax.swing.JLabel();
+        calendrioCholqijRadioButton1 = new javax.swing.JRadioButton();
         aceptarOpcionButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setText("Calendarios Mayas");
 
-        calendrioCholqijRadioButton.setText("Nahual y energia Cholqij");
+        calendrioCholqijRadioButton.setText("Calendario Haab");
+        calendrioCholqijRadioButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                calendrioCholqijRadioButtonActionPerformed(evt);
+            }
+        });
 
         jLabel2.setText("Seleccione la aplicacion a usar");
+
+        calendrioCholqijRadioButton1.setText("Nahual y energia Cholqij");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -47,18 +55,28 @@ public class MainFrame extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(48, 48, 48)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(calendrioCholqijRadioButton)
+                    .addComponent(calendrioCholqijRadioButton, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel2))
                 .addContainerGap(80, Short.MAX_VALUE))
+            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel2Layout.createSequentialGroup()
+                    .addGap(70, 70, 70)
+                    .addComponent(calendrioCholqijRadioButton1)
+                    .addContainerGap(70, Short.MAX_VALUE)))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addComponent(jLabel2)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 62, Short.MAX_VALUE)
                 .addComponent(calendrioCholqijRadioButton)
-                .addContainerGap(98, Short.MAX_VALUE))
+                .addGap(54, 54, 54))
+            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel2Layout.createSequentialGroup()
+                    .addGap(67, 67, 67)
+                    .addComponent(calendrioCholqijRadioButton1)
+                    .addContainerGap(88, Short.MAX_VALUE)))
         );
 
         aceptarOpcionButton.setText("Aceptar");
@@ -120,6 +138,13 @@ public class MainFrame extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_aceptarOpcionButtonActionPerformed
 
+    private void calendrioCholqijRadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calendrioCholqijRadioButtonActionPerformed
+        HaabFrame haab = new HaabFrame();
+        haab.setBounds(500, 300, 1000, 500);
+        haab.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_calendrioCholqijRadioButtonActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -158,6 +183,7 @@ public class MainFrame extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton aceptarOpcionButton;
     private javax.swing.JRadioButton calendrioCholqijRadioButton;
+    private javax.swing.JRadioButton calendrioCholqijRadioButton1;
     private javax.swing.ButtonGroup grupoDeBotones;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
