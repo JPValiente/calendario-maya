@@ -210,6 +210,7 @@ public class HaabFrame extends javax.swing.JFrame {
             try {
                 FechaHaab fecha = this.manejador.getFechaEspecifica(Integer.parseInt(mes),Integer.parseInt(dia));
                 setDateIcons(fecha);
+                
             } catch (Exception e) {
                 JOptionPane.showMessageDialog(null, "PROBLEMAS AL TOMAR LOS DATOS DE LA FECHA");
             }
