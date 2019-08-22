@@ -13,6 +13,8 @@ Se utilizará Java como lenguaje y el patrón de diseño Modelo-Vista-Controlado
 
 ![asd](./resources/modelo.png)
 
+## Por regla general, si alguien quiere utilizar imagene para lo del calendario, estas deben estar en tamaño 100x100 y en formato png para tener un estandar.
+
 *Si alguien tiene una sugerencia o pregunta puede hacerlo en el chat de Whatsapp.*
 
 Teoria de Sistemas Segundo Semestre 2019,<br>
