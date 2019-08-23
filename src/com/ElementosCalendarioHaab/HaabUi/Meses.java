@@ -1,5 +1,5 @@
 
-package com.ElementosCalendarioHaab;
+package com.ElementosCalendarioHaab.HaabUi;
 
 /**
  *
@@ -27,7 +27,7 @@ public class Meses extends javax.swing.JDialog {
         jLabel1.setText("MESES");
 
         jList1.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Mes 1:  Pop", " Mes 2: Wo'", " Mes 3: Sip", " Mes 4: Sotz'", " Mes 5: Sek", " Mes 6: Xul", " Mes 7: Yaxk'in", " Mes 8: Mol", " Mes 9: Ch'en", " Mes 10: Yax", " Mes 11:  Sak'", " Mes 12: Keh", " Mes 13: Mak", " Mes 14: K'ank'in", " Mes 15: Muwan", " Mes 16: Pax", " Mes 17: Kayab", " Mes 18: Kumk'u", " Mes 19: Wayeb" };
+            String[] strings = { "Mes 0:  Pop", " Mes 1: Wo'", " Mes 2: Sip", " Mes 3: Sotz'", " Mes 4: Sek", " Mes 5: Xul", " Mes 6: Yaxk'in", " Mes 7: Mol", " Mes 8: Ch'en", " Mes 9: Yax", " Mes 10:  Sak'", " Mes 11: Keh", " Mes 12: Mak", " Mes 13: K'ank'in", " Mes 14: Muwan", " Mes 15: Pax", " Mes 16: Kayab", " Mes 17: Kumk'u", " Mes 18: Wayeb" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });

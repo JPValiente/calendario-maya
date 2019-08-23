@@ -5,7 +5,7 @@ package com.ElementosCalendarioHaab;
  *
  * @author jpmazate
  */
-public abstract class ElementoCalendarioHaab {
+public class ElementoCalendarioHaab {
     
     private int numero;
     private String direccionDeImagen;

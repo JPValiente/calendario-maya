@@ -6,7 +6,7 @@
 package com.calendario.ui;
 
 import com.ElementosCalendarioHaab.FechaHaab;
-import com.ElementosCalendarioHaab.Meses;
+import com.ElementosCalendarioHaab.HaabUi.Meses;
 import com.Haab.ManejadorCalendarioHaab;
 import javax.swing.JOptionPane;
 

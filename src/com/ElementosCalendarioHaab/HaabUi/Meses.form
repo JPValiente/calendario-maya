@@ -67,25 +67,25 @@
           <Properties>
             <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
               <StringArray count="19">
-                <StringItem index="0" value="Mes 1:  Pop"/>
-                <StringItem index="1" value=" Mes 2: Wo&apos;"/>
-                <StringItem index="2" value=" Mes 3: Sip"/>
-                <StringItem index="3" value=" Mes 4: Sotz&apos;"/>
-                <StringItem index="4" value=" Mes 5: Sek"/>
-                <StringItem index="5" value=" Mes 6: Xul"/>
-                <StringItem index="6" value=" Mes 7: Yaxk&apos;in"/>
-                <StringItem index="7" value=" Mes 8: Mol"/>
-                <StringItem index="8" value=" Mes 9: Ch&apos;en"/>
-                <StringItem index="9" value=" Mes 10: Yax"/>
-                <StringItem index="10" value=" Mes 11:  Sak&apos;"/>
-                <StringItem index="11" value=" Mes 12: Keh"/>
-                <StringItem index="12" value=" Mes 13: Mak"/>
-                <StringItem index="13" value=" Mes 14: K&apos;ank&apos;in"/>
-                <StringItem index="14" value=" Mes 15: Muwan"/>
-                <StringItem index="15" value=" Mes 16: Pax"/>
-                <StringItem index="16" value=" Mes 17: Kayab"/>
-                <StringItem index="17" value=" Mes 18: Kumk&apos;u"/>
-                <StringItem index="18" value=" Mes 19: Wayeb"/>
+                <StringItem index="0" value="Mes 0:  Pop"/>
+                <StringItem index="1" value=" Mes 1: Wo&apos;"/>
+                <StringItem index="2" value=" Mes 2: Sip"/>
+                <StringItem index="3" value=" Mes 3: Sotz&apos;"/>
+                <StringItem index="4" value=" Mes 4: Sek"/>
+                <StringItem index="5" value=" Mes 5: Xul"/>
+                <StringItem index="6" value=" Mes 6: Yaxk&apos;in"/>
+                <StringItem index="7" value=" Mes 7: Mol"/>
+                <StringItem index="8" value=" Mes 8: Ch&apos;en"/>
+                <StringItem index="9" value=" Mes 9: Yax"/>
+                <StringItem index="10" value=" Mes 10:  Sak&apos;"/>
+                <StringItem index="11" value=" Mes 11: Keh"/>
+                <StringItem index="12" value=" Mes 12: Mak"/>
+                <StringItem index="13" value=" Mes 13: K&apos;ank&apos;in"/>
+                <StringItem index="14" value=" Mes 14: Muwan"/>
+                <StringItem index="15" value=" Mes 15: Pax"/>
+                <StringItem index="16" value=" Mes 16: Kayab"/>
+                <StringItem index="17" value=" Mes 17: Kumk&apos;u"/>
+                <StringItem index="18" value=" Mes 18: Wayeb"/>
               </StringArray>
             </Property>
           </Properties>

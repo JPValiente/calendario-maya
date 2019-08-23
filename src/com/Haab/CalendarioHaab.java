@@ -57,10 +57,10 @@ public class CalendarioHaab {
         int mesExtra;
         for (i = 0; i < this.mes.length - 1; i++) {
             numeroDeImagen = i + 1;
-            this.mes[i] = new ElementoMes(i, INCIO_URL_DE_MES + +numeroDeImagen + ".png", meses[i], false);
+            this.mes[i] = new ElementoMes(i, INCIO_URL_DE_MES + +numeroDeImagen + ".jpg", meses[i], false);
         }
         mesExtra=i+1;
-        this.mes[i] = new ElementoMes(i, INCIO_URL_DE_MES + mesExtra + ".png", meses[i], true);
+        this.mes[i] = new ElementoMes(i, INCIO_URL_DE_MES + mesExtra + ".jpg", meses[i], true);
     }
 
     private void crearCalendario() {
