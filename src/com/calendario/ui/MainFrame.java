@@ -118,6 +118,8 @@ public class MainFrame extends javax.swing.JFrame {
             ch.setVisible(true);
             this.dispose();
         }
+//        Calendario2019 n = new Calendario2019(this);
+//        n.setVisible(true);
     }//GEN-LAST:event_aceptarOpcionButtonActionPerformed
 
     /**
