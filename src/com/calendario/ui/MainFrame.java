@@ -31,6 +31,7 @@ public class MainFrame extends javax.swing.JFrame {
         calendarioHaab = new javax.swing.JRadioButton();
         jLabel2 = new javax.swing.JLabel();
         calendrioCholqijRadioButton1 = new javax.swing.JRadioButton();
+        matrizHaab = new javax.swing.JRadioButton();
         aceptarOpcionButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -48,6 +49,13 @@ public class MainFrame extends javax.swing.JFrame {
 
         calendrioCholqijRadioButton1.setText("Nahual y energia Cholqij");
 
+        matrizHaab.setText("Matriz Haab");
+        matrizHaab.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                matrizHaabActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -55,6 +63,7 @@ public class MainFrame extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(48, 48, 48)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(matrizHaab, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(calendarioHaab, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel2))
                 .addContainerGap(80, Short.MAX_VALUE))
@@ -71,7 +80,9 @@ public class MainFrame extends javax.swing.JFrame {
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 62, Short.MAX_VALUE)
                 .addComponent(calendarioHaab)
-                .addGap(54, 54, 54))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(matrizHaab)
+                .addGap(21, 21, 21))
             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel2Layout.createSequentialGroup()
                     .addGap(67, 67, 67)
@@ -140,12 +151,20 @@ public class MainFrame extends javax.swing.JFrame {
             haab.setBounds(500, 300, 1000, 500);
             haab.setVisible(true);
             this.dispose();
+        } else if (matrizHaab.isSelected()){
+            MatrizHaabFrame matrizHaab = new MatrizHaabFrame();
+            matrizHaab.setVisible(true);
+            this.dispose();
         }
     }//GEN-LAST:event_aceptarOpcionButtonActionPerformed
 
     private void calendarioHaabActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calendarioHaabActionPerformed
 
     }//GEN-LAST:event_calendarioHaabActionPerformed
+
+    private void matrizHaabActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_matrizHaabActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_matrizHaabActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -157,5 +176,6 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JRadioButton matrizHaab;
     // End of variables declaration//GEN-END:variables
 }
