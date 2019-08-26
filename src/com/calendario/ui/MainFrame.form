@@ -90,10 +90,17 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="calendrioCholqijRadioButton" min="-2" max="-2" attributes="0"/>
+                          <Component id="calendarioHaab" alignment="1" min="-2" pref="181" max="-2" attributes="0"/>
                           <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="80" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+                          <Component id="calendrioCholqijRadioButton1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="70" max="32767" attributes="0"/>
+                      </Group>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -102,22 +109,37 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                       <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="calendrioCholqijRadioButton" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="98" max="32767" attributes="0"/>
+                      <EmptySpace pref="62" max="32767" attributes="0"/>
+                      <Component id="calendarioHaab" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
+                          <Component id="calendrioCholqijRadioButton1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="88" max="32767" attributes="0"/>
+                      </Group>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JRadioButton" name="calendrioCholqijRadioButton">
+            <Component class="javax.swing.JRadioButton" name="calendarioHaab">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Nahual y energia Cholqij"/>
+                <Property name="text" type="java.lang.String" value="Calendario Haab"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="calendarioHaabActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel2">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Seleccione la aplicacion a usar"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="calendrioCholqijRadioButton1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Nahual y energia Cholqij"/>
               </Properties>
             </Component>
           </SubComponents>
