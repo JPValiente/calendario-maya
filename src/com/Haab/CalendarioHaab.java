@@ -27,6 +27,9 @@ public class CalendarioHaab {
     private final ElementoDia dia[];
     private final ElementoMes mes[];
     private String informacionDeDia[];
+    public static final int NUM_DAYS = 20;
+    public static final int NUM_MONTHS = 19;
+    public static final int NUM_LAST_DAYS = 5;
 
     public CalendarioHaab(boolean esParaCuadricula) {
         dia = new ElementoDia[20];
@@ -122,5 +125,30 @@ public class CalendarioHaab {
         
     }
     
-
+        public final String[] monthsName(){
+        String[] months = new String[19];
+        
+        months[0] = "Pop";
+        months[1] = "Wo'";
+        months[2] = "Sip";
+        months[3] = "Sotz'";
+        months[4] = "Sek";
+        months[5] = "Xul";
+        months[6] = "Yaxk'in";
+        months[7] = "Mol";
+        months[8] = "Ch'en";
+        months[9] = "Yax";
+        months[10] = "Sak'";
+        months[11] = "Keh";
+        months[12] = "Mak";
+        months[13] = "K'ank'in";
+        months[14] = "Muwan";
+        months[15] = "Pax";
+        months[16] = "Kayab";
+        months[17] = "Kumk'u";
+        months[18] = "Wayeb";
+        
+        return months;
+    }
+    
 }
