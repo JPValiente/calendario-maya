@@ -5,11 +5,11 @@
  */
 package com.apiFecha;
 
-import com.ElementosCalendarioHaab.FechaHaab;
-import com.Haab.ManejadorCalendarioHaab;
-import com.SumadorFechas.Fecha;
-import com.cholqij.ManejadorDeCalendarioCholqij;
-import com.elementoCalendarioCholqij.KinCholqij;
+import com.apiFecha.ElementosCalendarioHaab.FechaHaab;
+import com.apiFecha.Haab.ManejadorCalendarioHaab;
+import com.apiFecha.SumadorFechas.Fecha;
+import com.apiFecha.cholqij.ManejadorDeCalendarioCholqij;
+import com.apiFecha.elementoCalendarioCholqij.KinCholqij;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 

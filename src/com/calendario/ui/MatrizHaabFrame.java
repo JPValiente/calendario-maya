@@ -5,13 +5,13 @@
  */
 package com.calendario.ui;
 
-import com.ElementosCalendarioHaab.FechaHaab;
-import com.Haab.ManejadorCalendarioHaab;
-import com.Haab.ManejadorMatrizHaab;
+import com.apiFecha.ElementosCalendarioHaab.FechaHaab;
+import com.apiFecha.Haab.ManejadorCalendarioHaab;
+import com.apiFecha.Haab.ManejadorMatrizHaab;
 import javax.swing.table.DefaultTableModel;
-import com.ElementosCalendarioHaab.FechaHaab;
+import com.apiFecha.ElementosCalendarioHaab.FechaHaab;
 import com.ElementosCalendarioHaab.HaabUi.Meses;
-import com.Haab.ManejadorCalendarioHaab;
+import com.apiFecha.Haab.ManejadorCalendarioHaab;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;

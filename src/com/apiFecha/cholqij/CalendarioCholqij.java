@@ -1,8 +1,8 @@
-package com.cholqij;
+package com.apiFecha.cholqij;
 
-import com.elementoCalendarioCholqij.EnergiaCholqij;
-import com.elementoCalendarioCholqij.NahualCholqij;
-import com.elementoCalendarioCholqij.KinCholqij;
+import com.apiFecha.elementoCalendarioCholqij.EnergiaCholqij;
+import com.apiFecha.elementoCalendarioCholqij.NahualCholqij;
+import com.apiFecha.elementoCalendarioCholqij.KinCholqij;
 
 /**
  *

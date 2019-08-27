@@ -3,15 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.Haab;
+package com.apiFecha.Haab;
 
-import com.ElementosCalendarioHaab.ElementoCalendarioHaab;
-import com.ElementosCalendarioHaab.ElementoDia;
-import com.ElementosCalendarioHaab.ElementoMes;
-import com.ElementosCalendarioHaab.FechaHaab;
-import com.elementoCalendarioCholqij.EnergiaCholqij;
-import com.elementoCalendarioCholqij.KinCholqij;
-import com.elementoCalendarioCholqij.NahualCholqij;
+import com.apiFecha.ElementosCalendarioHaab.ElementoCalendarioHaab;
+import com.apiFecha.ElementosCalendarioHaab.ElementoDia;
+import com.apiFecha.ElementosCalendarioHaab.ElementoMes;
+import com.apiFecha.ElementosCalendarioHaab.FechaHaab;
+import com.apiFecha.elementoCalendarioCholqij.EnergiaCholqij;
+import com.apiFecha.elementoCalendarioCholqij.KinCholqij;
+import com.apiFecha.elementoCalendarioCholqij.NahualCholqij;
 
 /**
  *
