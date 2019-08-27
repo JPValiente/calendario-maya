@@ -5,18 +5,13 @@
  */
 package com.apiFecha;
 
-import com.ElementosCalendarioHaab.ElementoDia;
 import com.ElementosCalendarioHaab.FechaHaab;
 import com.Haab.ManejadorCalendarioHaab;
 import com.SumadorFechas.Fecha;
 import com.cholqij.ManejadorDeCalendarioCholqij;
-import com.elementoCalendarioCholqij.EnergiaCholqij;
 import com.elementoCalendarioCholqij.KinCholqij;
-import com.elementoCalendarioCholqij.NahualCholqij;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
-import java.util.Calendar;
-import java.util.Date;
 
 /**
  *
@@ -34,28 +29,28 @@ public class ApiFecha {
     public static final LocalDate FECHA_PIVOTE_GREGORIANO = LocalDate.of(2012, 12, 21);
     
     //public static final KinCholqij DIA_CHOLQIJ = new KinCholqij(new NahualCholqij(20,"",""),new EnergiaCholqij(4, "", ""));
-    public static  ManejadorDeCalendarioCholqij MAN_CHOLQIJ = new ManejadorDeCalendarioCholqij();
-    public static  ManejadorCalendarioHaab MAN_HAAB = new ManejadorCalendarioHaab();
+    public static  ManejadorDeCalendarioCholqij manCholqij = new ManejadorDeCalendarioCholqij();
+    public static  ManejadorCalendarioHaab manHab = new ManejadorCalendarioHaab();
     
     public static KinCholqij convertirGregorianoAKinCHolqij(LocalDate fecha)throws Exception{
         Fecha fechaCuentaLarga=convertirFechaGregorianaACuentaLarga(fecha);
         int dias = fechaCuentaLarga.getDiasExactos();
         dias -= DIAS_PIVOTE_CUENTA_LARGA;
-        MAN_CHOLQIJ.setNumeroDeEnergia(8);
-        MAN_CHOLQIJ.setNumeroDeNahual(20);
+        manCholqij.setNumeroDeEnergia(8);
+        manCholqij.setNumeroDeNahual(20);
         //Los dias seran los que se avanze o retroceda en la matris
         KinCholqij dia=null;
         if(dias>0){
             for (int i = 0; i < dias; i++) {
-                dia=MAN_CHOLQIJ.verDiaSiguiente();
+                dia=manCholqij.verDiaSiguiente();
             }
         }else if(dias<0){
             dias*=-1;
             for (int i = 0; i < dias; i++) {
-                dia=MAN_CHOLQIJ.verDiaAnterior();
+                dia=manCholqij.verDiaAnterior();
             }
         }else{
-           return  MAN_CHOLQIJ.getCalendario().getDiasDeCalendarioCholtij()[20-1][8-1];
+           return  manCholqij.getCalendario().getDiasDeCalendarioCholtij()[20-1][8-1];
         }
         return dia;
     }
@@ -64,20 +59,20 @@ public class ApiFecha {
         Fecha fechaCuentaLarga=convertirFechaGregorianaACuentaLarga(fecha);
         int dias = fechaCuentaLarga.getDiasExactos();
         dias -= DIAS_PIVOTE_CUENTA_LARGA;
-        MAN_HAAB.setDia(2);
-        MAN_HAAB.setMes(13);
+        manHab.setDia(2);
+        manHab.setMes(13);
         FechaHaab dia=null;
          if(dias>0){
             for (int i = 0; i < dias; i++) {
-               dia= MAN_HAAB.getDiaSiguiente();
+               dia= manHab.getDiaSiguiente();
             }
         }else if(dias<0){
             dias*=-1;
             for (int i = 0; i < dias; i++) {
-                dia=MAN_HAAB.getDiaAnterior();
+                dia=manHab.getDiaAnterior();
             }
         }else{
-           return  MAN_HAAB.getCalendarioHaab().getFechasHaab()[3-1][13];
+           return  manHab.getCalendarioHaab().getFechasHaab()[3-1][13];
         }
         return dia;
     }
@@ -119,7 +114,7 @@ public class ApiFecha {
     public static int verTotalDeDiasEntreFechas(Fecha fecha1, Fecha fecha2) {
         LocalDate nuevaF1 = convertirFechaDeCuentaLargaAGregoriana(fecha1);
         LocalDate nuevaF2 = convertirFechaDeCuentaLargaAGregoriana(fecha2);
-        int diasEntreFechas = (int) ChronoUnit.DAYS.between(nuevaF1, nuevaF2);
+        int diasEntreFechas = (int) ChronoUnit.DAYS.between(nuevaF2, nuevaF1);//Fecha menor,Fecha mayor
         return diasEntreFechas;
     }
 }
