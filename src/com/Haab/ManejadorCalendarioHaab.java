@@ -95,4 +95,16 @@ public class ManejadorCalendarioHaab {
         return calendarioHaab.getFechaExacta()[dia][mes];
     }
 
+    public void setDia(Integer dia) {
+        this.dia = dia;
+    }
+
+    public void setMes(Integer mes) {
+        this.mes = mes;
+    }
+
+    public CalendarioHaab getCalendarioHaab() {
+        return calendarioHaab;
+    }
+
 }

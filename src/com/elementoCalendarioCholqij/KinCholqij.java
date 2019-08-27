@@ -13,6 +13,11 @@ public class KinCholqij {
         this.nahual = nahual;
     }
 
+    public KinCholqij(NahualCholqij nahual, EnergiaCholqij energia) {
+        this.nahual = nahual;
+        this.energia = energia;
+    }
+
     public NahualCholqij getNahual() {
         return nahual;
     }

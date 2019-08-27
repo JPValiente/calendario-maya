@@ -150,5 +150,9 @@ public class CalendarioHaab {
         
         return months;
     }
+
+    public FechaHaab[][] getFechasHaab() {
+        return fechasHaab;
+    }
     
 }
