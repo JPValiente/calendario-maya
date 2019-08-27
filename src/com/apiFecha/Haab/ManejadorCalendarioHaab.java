@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.Haab;
+package com.apiFecha.Haab;
 
-import com.ElementosCalendarioHaab.FechaHaab;
+import com.apiFecha.ElementosCalendarioHaab.FechaHaab;
 import javax.swing.JOptionPane;
 
 /**
@@ -93,6 +93,18 @@ public class ManejadorCalendarioHaab {
         }
 
         return calendarioHaab.getFechaExacta()[dia][mes];
+    }
+
+    public void setDia(Integer dia) {
+        this.dia = dia;
+    }
+
+    public void setMes(Integer mes) {
+        this.mes = mes;
+    }
+
+    public CalendarioHaab getCalendarioHaab() {
+        return calendarioHaab;
     }
 
 }

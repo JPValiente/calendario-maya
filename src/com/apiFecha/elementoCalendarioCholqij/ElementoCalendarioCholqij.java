@@ -1,17 +1,16 @@
-
-package com.ElementosCalendarioHaab;
+package com.apiFecha.elementoCalendarioCholqij;
 
 /**
  *
- * @author jpmazate
+ * @author jesfrin
  */
-public class ElementoCalendarioHaab {
+public abstract class ElementoCalendarioCholqij {
     
     private int numero;
     private String direccionDeImagen;
     private String descripcion;
 
-    public ElementoCalendarioHaab(int numero, String direccionDeImagen, String descripcion) {
+    public ElementoCalendarioCholqij(int numero, String direccionDeImagen, String descripcion) {
         this.numero = numero;
         this.direccionDeImagen = direccionDeImagen;
         this.descripcion = descripcion;

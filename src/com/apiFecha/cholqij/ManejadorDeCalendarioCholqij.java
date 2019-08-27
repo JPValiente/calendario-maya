@@ -1,6 +1,6 @@
-package com.cholqij;
+package com.apiFecha.cholqij;
 
-import com.elementoCalendarioCholqij.KinCholqij;
+import com.apiFecha.elementoCalendarioCholqij.KinCholqij;
 
 /**
  *

@@ -1,4 +1,4 @@
-package com.SumadorFechas;
+package com.apiFecha.SumadorFechas;
 
 import javax.swing.JOptionPane;
 

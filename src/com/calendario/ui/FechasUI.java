@@ -1,7 +1,7 @@
 package com.calendario.ui;
 
-import com.SumadorFechas.Fecha;
-import com.SumadorFechas.OperacionesFechas;
+import com.apiFecha.SumadorFechas.Fecha;
+import com.apiFecha.SumadorFechas.OperacionesFechas;
 import javax.swing.JOptionPane;
 
 /**

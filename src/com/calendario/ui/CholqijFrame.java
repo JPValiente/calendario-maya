@@ -1,7 +1,7 @@
 package com.calendario.ui;
 
-import com.cholqij.ManejadorDeCalendarioCholqij;
-import com.elementoCalendarioCholqij.KinCholqij;
+import com.apiFecha.cholqij.ManejadorDeCalendarioCholqij;
+import com.apiFecha.elementoCalendarioCholqij.KinCholqij;
 
 /**
  *

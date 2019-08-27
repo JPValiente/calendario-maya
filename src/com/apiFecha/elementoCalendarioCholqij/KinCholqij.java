@@ -1,4 +1,4 @@
-package com.elementoCalendarioCholqij;
+package com.apiFecha.elementoCalendarioCholqij;
 
 /**
  *
@@ -11,6 +11,11 @@ public class KinCholqij {
     
     public KinCholqij(NahualCholqij nahual){
         this.nahual = nahual;
+    }
+
+    public KinCholqij(NahualCholqij nahual, EnergiaCholqij energia) {
+        this.nahual = nahual;
+        this.energia = energia;
     }
 
     public NahualCholqij getNahual() {
