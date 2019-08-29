@@ -34,17 +34,14 @@ public class MainFrame extends javax.swing.JFrame {
         matrizHaab = new javax.swing.JRadioButton();
         sumadorFechas = new javax.swing.JRadioButton();
         aceptarOpcionButton = new javax.swing.JButton();
+        calendarioLunar = new javax.swing.JRadioButton();
+        matrizLunar = new javax.swing.JRadioButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setText("Calendarios Mayas");
 
         calendarioHaab.setText("Calendario Haab");
-        calendarioHaab.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                calendarioHaabActionPerformed(evt);
-            }
-        });
 
         jLabel2.setText("Seleccione la aplicacion a usar");
 
@@ -66,45 +63,56 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
+        calendarioLunar.setText("Calendario Lunar");
+        calendarioLunar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                calendarioLunarActionPerformed(evt);
+            }
+        });
+
+        matrizLunar.setText("Matriz Lunar");
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(matrizLunar)
+                    .addComponent(jLabel2)
+                    .addComponent(calendrioCholqijRadioButton1)
+                    .addComponent(calendarioHaab, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(70, 70, 70)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(calendarioHaab, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(calendrioCholqijRadioButton1)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(sumadorFechas)
-                                    .addComponent(matrizHaab, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(86, 86, 86)
-                                .addComponent(aceptarOpcionButton))))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(96, 96, 96)
-                        .addComponent(jLabel2)))
-                .addContainerGap(86, Short.MAX_VALUE))
+                            .addComponent(matrizHaab, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(sumadorFechas))
+                        .addGap(84, 84, 84)
+                        .addComponent(aceptarOpcionButton, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(calendarioLunar))
+                .addContainerGap(92, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(44, Short.MAX_VALUE)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(aceptarOpcionButton)
+                .addContainerGap()
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(calendrioCholqijRadioButton1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(calendarioHaab)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel2)
-                        .addGap(18, 18, 18)
-                        .addComponent(calendrioCholqijRadioButton1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(calendarioHaab)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(matrizHaab)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(sumadorFechas)))
-                .addGap(36, 36, 36))
+                        .addComponent(sumadorFechas))
+                    .addComponent(aceptarOpcionButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(calendarioLunar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(matrizLunar)
+                .addContainerGap(66, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -119,7 +127,7 @@ public class MainFrame extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(76, 76, 76)
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(97, Short.MAX_VALUE))
+                .addContainerGap(127, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -128,7 +136,7 @@ public class MainFrame extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(58, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -164,21 +172,32 @@ public class MainFrame extends javax.swing.JFrame {
             fecha.setBounds(500, 300, 1000, 500);
             fecha.setVisible(true);
             this.dispose();
+        }else if (calendarioLunar.isSelected()){
+            Calendario2019 fecha = new Calendario2019(this);
+            fecha.setBounds(500, 300, 1000, 500);
+            fecha.setVisible(true);
+            this.dispose();
+        }else if (matrizLunar.isSelected()){
+            FrameMatrizLunar fecha = new FrameMatrizLunar(this);
+            fecha.setBounds(500, 300, 1000, 500);
+            fecha.setVisible(true);
+            this.dispose();
         }
     }//GEN-LAST:event_aceptarOpcionButtonActionPerformed
-
-    private void calendarioHaabActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calendarioHaabActionPerformed
-
-    }//GEN-LAST:event_calendarioHaabActionPerformed
 
     private void matrizHaabActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_matrizHaabActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_matrizHaabActionPerformed
 
+    private void calendarioLunarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calendarioLunarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_calendarioLunarActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton aceptarOpcionButton;
     private javax.swing.JRadioButton calendarioHaab;
+    private javax.swing.JRadioButton calendarioLunar;
     private javax.swing.JRadioButton calendrioCholqijRadioButton1;
     private javax.swing.ButtonGroup grupoDeBotones;
     private javax.swing.JLabel jLabel1;
@@ -186,6 +205,7 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JRadioButton matrizHaab;
+    private javax.swing.JRadioButton matrizLunar;
     private javax.swing.JRadioButton sumadorFechas;
     // End of variables declaration//GEN-END:variables
 }
