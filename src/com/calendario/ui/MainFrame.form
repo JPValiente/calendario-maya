@@ -96,6 +96,7 @@
                               <Component id="aceptarOpcionButton" min="-2" pref="90" max="-2" attributes="0"/>
                           </Group>
                           <Component id="calendarioLunar" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="matrizCholquij" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="92" max="32767" attributes="0"/>
                   </Group>
@@ -123,7 +124,9 @@
                       <Component id="calendarioLunar" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="matrizLunar" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="66" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="matrizCholquij" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="36" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -176,6 +179,11 @@
             <Component class="javax.swing.JRadioButton" name="matrizLunar">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Matriz Lunar"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="matrizCholquij">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Matriz Cholqij"/>
               </Properties>
             </Component>
           </SubComponents>
