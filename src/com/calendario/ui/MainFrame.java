@@ -6,9 +6,6 @@ package com.calendario.ui;
  */
 public class MainFrame extends javax.swing.JFrame {
 
-    /**
-     * Creates new form MainFrame
-     */
     public MainFrame() {
         initComponents();
         this.setLocationRelativeTo(null);
@@ -36,6 +33,7 @@ public class MainFrame extends javax.swing.JFrame {
         aceptarOpcionButton = new javax.swing.JButton();
         calendarioLunar = new javax.swing.JRadioButton();
         matrizLunar = new javax.swing.JRadioButton();
+        matrizCholquij = new javax.swing.JRadioButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -72,6 +70,8 @@ public class MainFrame extends javax.swing.JFrame {
 
         matrizLunar.setText("Matriz Lunar");
 
+        matrizCholquij.setText("Matriz Cholqij");
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -89,7 +89,8 @@ public class MainFrame extends javax.swing.JFrame {
                             .addComponent(sumadorFechas))
                         .addGap(84, 84, 84)
                         .addComponent(aceptarOpcionButton, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(calendarioLunar))
+                    .addComponent(calendarioLunar)
+                    .addComponent(matrizCholquij))
                 .addContainerGap(92, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -112,7 +113,9 @@ public class MainFrame extends javax.swing.JFrame {
                 .addComponent(calendarioLunar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(matrizLunar)
-                .addContainerGap(66, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(matrizCholquij)
+                .addContainerGap(36, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -182,6 +185,11 @@ public class MainFrame extends javax.swing.JFrame {
             fecha.setBounds(500, 300, 1000, 500);
             fecha.setVisible(true);
             this.dispose();
+        }else if (matrizCholquij.isSelected()) {
+            matrizCholquijFrame matrizChol = new matrizCholquijFrame();
+            matrizChol.setBounds(500, 300, 1000, 500);
+            matrizChol.setVisible(true);
+            this.dispose();
         }
     }//GEN-LAST:event_aceptarOpcionButtonActionPerformed
 
@@ -204,6 +212,7 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JRadioButton matrizCholquij;
     private javax.swing.JRadioButton matrizHaab;
     private javax.swing.JRadioButton matrizLunar;
     private javax.swing.JRadioButton sumadorFechas;
