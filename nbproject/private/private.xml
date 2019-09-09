@@ -2,6 +2,17 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/home/anclenius/NetBeansProjects/CalendarioMaya/src/com/calendario/CalendarioMaya.java</file>
+            <file>file:/home/anclenius/NetBeansProjects/CalendarioMaya/src/com/calendario/ui/InfoFaseLunar.java</file>
+            <file>file:/home/anclenius/NetBeansProjects/CalendarioMaya/src/com/calendario/ui/MainFrame.java</file>
+            <file>file:/home/anclenius/NetBeansProjects/CalendarioMaya/src/com/faselunar/ConstanteFaseLunar.java</file>
+            <file>file:/home/anclenius/NetBeansProjects/CalendarioMaya/src/com/apiFecha/elementoCalendarioCholqij/KinCholqij.java</file>
+            <file>file:/home/anclenius/NetBeansProjects/CalendarioMaya/src/com/calendario/ui/Calendario2019.java</file>
+            <file>file:/home/anclenius/NetBeansProjects/CalendarioMaya/src/com/apiFecha/SumadorFechas/OperacionesFechas.java</file>
+            <file>file:/home/anclenius/NetBeansProjects/CalendarioMaya/src/com/apiFecha/SumadorFechas/Fecha.java</file>
+            <file>file:/home/anclenius/NetBeansProjects/CalendarioMaya/src/com/faselunar/ControladorCalendarioG.java</file>
+            <file>file:/home/anclenius/NetBeansProjects/CalendarioMaya/src/com/faselunar/CalculadorFaseLunar.java</file>
+        </group>
     </open-files>
 </project-private>
